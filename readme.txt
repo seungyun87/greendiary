@@ -7,4 +7,4 @@ greendiary/templates/base.html 생성
 leedy 브랜치 생성
 
 8/11
-Key 브랜치 생성
+ksy 브랜치 생성
