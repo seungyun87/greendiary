@@ -5,7 +5,7 @@ greendiary/templates/base.html 생성
 
 8/11
 leedy 브랜치 생성
-연습
+연습 끝
 
 8/11
 ksy 브랜치 생성
