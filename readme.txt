@@ -35,5 +35,18 @@ static/css/style.css 생성.
 templates/home.html 생성 및 css 추가, 테스트 문구 추가.
 templates/base.html 부트스트랩 navbar 추가, css 추가.
 
+8/14 leedy
+☆pip install pillow
+settings.py 가장 하단 media 경로 설정.
 
+- login, logout, signup 구현
+(html 생성, views작성, url 설정)
+- Profile 모델 생성
+(signup을 통해 가입하면 함께 생성되도록 설정.
+여기에 point를 저장해서 다뤄볼 예정..)
+- calendar, diary_create, diary_list 구현
+*현재 달력은 모든 글의 썸네일이 보입니다.
+
+위 내용들 테스트를 위해 base.html에 링크.
+테스트계정 test01, test02 (pw:likelion)을 만들었습니다.
 

@@ -22,9 +22,24 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
+      <!--테스트를 위해 넣었습니다 /start-->
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="{% url 'diary:calendar'%}">달력</a>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'diary:list' %}">리스트</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">회원가입</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">로그인</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">로그아웃</a>
+      </li>
+      <!--테스트를 위해 넣었습니다 /end-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
