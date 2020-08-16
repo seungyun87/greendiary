@@ -73,3 +73,36 @@ class DiaryCreate(CreateView):
             return redirect('/')
         else:
             return self.render_to_response({'form':form})
+
+    
+class DiaryDelete(DeleteView):
+    model = Diary
+    template_name_suffix = '_delete'
+    success_url = '/'
+
+    def dispatch(self, request, *args, **kwargs):
+        object = self.get_object()
+        if object.author != request.user:
+            messages.warning(request, '삭제할 권한 없음')
+            return HttpResponseRedirect('/')
+        else:
+            return super(photoDelete, self).dispatch(request, *args, **kwargs)
+
+
+class DiaryDetail(DetailView):
+    model = Diary
+    template_name_suffix = '_detail'
+
+class DiaryEdit(UpdateView):
+    model = Diary
+    template_name_suffix = '_update'
+    fields = ['text', 'image']
+    success_url = '/'
+
+    def dispatch(self, reqeust, *args, **kwargs):
+        object = self.get_object()
+        if object.author != request.user:
+            messages.warning(request, '수정할권한없음')
+            return HttpResponseRedirect('/')
+        else:
+            return super(DiaryEdit, self).dispatch(request, *args, **kwargs)
