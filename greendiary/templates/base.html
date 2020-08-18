@@ -1,0 +1,85 @@
+{% load static %}
+    <head>
+        <!--style.css file 가져오기-->
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/calendar.css' %}">
+        <!--bootstrap 호출
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        -->
+        
+	    <title>greendiary</title>
+    </head>
+
+    <body>
+      <div class="grid">
+        <div class="header">
+          <h1>상단바</h1>
+        </div>
+          <div class="sidebar">
+		        <li><a href="{% url 'diary:calendar'%}">달력</a></li>
+		        <li><a href="{% url 'diary:list' %}">리스트</a></li>
+		        <li><a href="{% url 'signup' %}">회원가입</a></li>
+            <li><a href="{% url 'login' %}">로그인</a></li>
+            <li><a href="{% url 'logout' %}">로그아웃</a></li>
+          </div>
+      </div>
+      {% block content %}
+      {% endblock %}
+    </body>
+
+
+    <!-- 임시 navbar 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      테스트를 위해 넣었습니다 /start
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'diary:calendar'%}">달력</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'diary:list' %}">리스트</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">회원가입</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">로그인</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">로그아웃</a>
+      </li>
+      테스트를 위해 넣었습니다 /end
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+-->
+
+
+
