@@ -75,3 +75,29 @@ border: 1px solid #aaa;
   .container {
     background: url('img/bg.png') repeat-y #fff;
   }
+  
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a {
+display: block;
+color: #000000;
+padding: 8px;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+}
+
+li a.current {
+background-color: #FF6347;
+color: white;
+}
+  
+li a:hover:not(.current) {
+background-color: #67cd3f;
+color: white;
+}
+
+

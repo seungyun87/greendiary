@@ -30,10 +30,17 @@
 }
   
 ul {
+    list-style: none;
     height: 100%;
     padding: 0px 5px 0px 20px;
 }
   
 a {
-    color: #17a2b8;
+	text-decoration: none;
+	font-weight: bold;
+    color: black;
+}
+
+.right{
+    text-align: right;
 }

@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    grid-template-columns: 200px 3fr 200px;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 100px 3fr 100px;
     gap: 20px;
     	
@@ -20,7 +20,8 @@
 .header {
     grid-column: 1/4;
     grid-row: 1/2;
-   
+    text-align: right;
+    text-align: center;
     border: 1px solid #bcbcbc;
 }
 .content {
@@ -31,10 +32,8 @@
     border: 1px solid #bcbcbc;
 }
 
-li {
-    
-	width: 0px auto;
-	list-style-type: none;
+li{
+    list-style: none;
 }
 
 li:last-child {
@@ -49,14 +48,13 @@ li a {
 	text-decoration: none;
 	font-weight: bold;
 }
-/**
+
 li a.current {
 	background-color: #FF6347;
 	color: white;
-}**/
+}
     
 li a:hover:not(.current) {
 	background-color: #67cd3f;
 	color: white;
 }
-
