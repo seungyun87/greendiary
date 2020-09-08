@@ -56,4 +56,9 @@ views.py에 DiaryDetail, DiaryEdit, DiaryDelete 구현
 8/18 ksh
 django버전 2.1.1 => 2.1.5로 업데이트
 
+9/08 ksy
+- base.html 전체 메뉴 수정
+- base, calendar.css 생성 및 적용
+
+
 
