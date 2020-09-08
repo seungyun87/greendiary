@@ -20,8 +20,6 @@
 .header {
     grid-column: 1/4;
     grid-row: 1/2;
-    text-align: right;
-    text-align: center;
     border: 1px solid #bcbcbc;
 }
 .content {
@@ -57,4 +55,17 @@ li a.current {
 li a:hover:not(.current) {
 	background-color: #67cd3f;
 	color: white;
+}
+
+.right {
+    text-align: right;
+}
+
+.vercenter {
+    line-height: 100px;
+}
+
+body {
+    
+    font-family: 'Poor Story', cursive;
 }
