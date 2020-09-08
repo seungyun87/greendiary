@@ -50,3 +50,10 @@ settings.py 가장 하단 media 경로 설정.
 위 내용들 테스트를 위해 base.html에 링크.
 테스트계정 test01, test02 (pw:likelion)을 만들었습니다.
 
+8/16 ksh
+views.py에 DiaryDetail, DiaryEdit, DiaryDelete 구현
+
+8/18 ksh
+django버전 2.1.1 => 2.1.5로 업데이트
+
+
