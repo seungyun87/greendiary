@@ -60,5 +60,8 @@ django버전 2.1.1 => 2.1.5로 업데이트
 - base.html 전체 메뉴 수정
 - base, calendar.css 생성 및 적용
 
+9/09 ksh
+-diary_detail.html, diary_delete.html 살짝 구현
+-('detail', 'delete', 'edit' ) url 설정
 
 

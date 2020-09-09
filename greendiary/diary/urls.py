@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import DiaryCreate, DiaryList, CalendarView
+from .views import DiaryCreate, DiaryList, CalendarView, DiaryDetail, DiaryDelete, DiaryEdit
 from django.conf.urls.static import static
 from django.conf import settings
 from . import views
@@ -11,6 +11,9 @@ urlpatterns = [
     path("create/", DiaryCreate.as_view(), name="create"),
     path("calendar/", CalendarView.as_view(), name="calendar"),
     path("list/", DiaryList.as_view(), name="list"),
+    path("detail/<int:pk>", DiaryDetail.as_view(), name="detail"),
+    path("delete/<int:pk>", DiaryDelete.as_view(), name="delete"),
+    path("edit/<int:pk>", DiaryEdit.as_view(), name="edit"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

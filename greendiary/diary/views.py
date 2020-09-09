@@ -86,7 +86,7 @@ class DiaryDelete(DeleteView):
             messages.warning(request, '삭제할 권한 없음')
             return HttpResponseRedirect('/')
         else:
-            return super(photoDelete, self).dispatch(request, *args, **kwargs)
+            return super(DiaryDelete, self).dispatch(request, *args, **kwargs)
 
 
 class DiaryDetail(DetailView):
