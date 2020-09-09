@@ -6,7 +6,8 @@
 	{% if object.author == request.user %}
 			<img src="{{ object.image.url }}">
 			<p>{{ object.created }}</p>
-			<p>{{ object.text }}</p>
+			<p>{{ object.text }}
+			<a href="{% url 'diary:detail' object.id %}">[더보기]</a></p>
 	{% endif %}
 	{% endfor %}
 </div>

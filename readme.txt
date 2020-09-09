@@ -64,4 +64,5 @@ django버전 2.1.1 => 2.1.5로 업데이트
 -diary_detail.html, diary_delete.html 살짝 구현
 -('detail', 'delete', 'edit' ) url 설정
 
-
+9/09 leedy
+diary_detail.html, diary_list.html 수정
