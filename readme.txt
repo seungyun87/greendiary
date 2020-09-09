@@ -66,3 +66,7 @@ django버전 2.1.1 => 2.1.5로 업데이트
 
 9/09 leedy
 diary_detail.html, diary_list.html 수정
+
+9/09 ksy
+base.css 내용 추가 및 수정
+html style 추가 및 수정

@@ -13,15 +13,20 @@
     <style>
      
 
-</style>
+    </style>
      
     <body>
+    
       <div class="grid">
         
         <div class="header">
-          <h1 style="line-height: 0px;">초록일기</h1>
+          <div class="header-gd">
+            <h1><a href="{% url 'diary:home' %}">초록일기</a></h1>
           </div>
-          <div class="header">
+        </div>
+        <div class="header-color"></div>    
+
+        <div class="header">
           <div class="vercenter">
             <div class="right">
           <a href="{% url 'signup' %}">회원가입</a>
@@ -34,17 +39,26 @@
         
           <div class="sidebar">
            <div id="container">
+             
             <ul>
+            <br></br>
             <li><a href="">환경뉴스</a></li>
             <li><a href="{% url 'diary:calendar'%}">다이어리</a>
               <ul>
                 <li><a href="{% url 'diary:calendar'%}">나의 다이어리</a></li>
                 <li><a href="{% url 'diary:list' %}">다이어리 리스트</a></li>
+                
+              </ul>
+            </li>
+            <li><a href="">정원</a>
+              <ul>
+                <li><a href="">나의 정원</a></li>                
               </ul>
             </li>
               
              
            </ul>
+           
           </div>
           </div>
     {% block content %}
