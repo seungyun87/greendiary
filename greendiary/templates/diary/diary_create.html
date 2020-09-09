@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
-{% block content %}
-<div class="container">
-    <h1>일기작성</h1>
+
+<div class="grid">
+    {% block content %}
+        <div class="content">
+            <h1>일기작성</h1>
     <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{form.as_p}}
         <input type="submit" value="Upload">
     </form>
+        </div>
+    {% endblock %}
 </div>
-{% endblock %}
+
