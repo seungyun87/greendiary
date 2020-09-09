@@ -1,4 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="container">
+    <h1>수정 페이지</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <br>
+        <input type="submit" value="Upload">        <!--글 수정 가능 & 사진 다른 걸로 교체 가능 & 다시 올렸을 때 날짜 안바뀜-->
+    </form>
+</div>
 
 {% endblock %}

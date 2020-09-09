@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<div class="alert alert-secondary" role="alert">
-    {{object}}를 지우시겠습니까?
+<h1>삭제 페이지</h1>
+  <div class="alert alert-secondary" role="alert" >
+    <img src="{{ object.image.url }}">
+    <p>{{object}}을(를) 지우시겠습니까?</p>
   </div>
   
   <form action="" method = "post">
       {%csrf_token %}
-      <input type= "submit" value = "ok">
+      <input type= "submit" value = "Ok">
   </form>
 {% endblock %}

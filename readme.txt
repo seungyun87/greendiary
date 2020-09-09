@@ -66,3 +66,8 @@ django버전 2.1.1 => 2.1.5로 업데이트
 
 9/09 leedy
 diary_detail.html, diary_list.html 수정
+
+9/10 ksh
+diary_detail.html, diary_delete.html 수정 (디테일 페이지에 '수정', '삭제' 달았습니다.)
+diary_edit.html 구현
+setting.py 안에 TIME_ZONE 수정 (우리나라 시간으로 고쳤습니다.)

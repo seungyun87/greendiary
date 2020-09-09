@@ -95,11 +95,11 @@ class DiaryDetail(DetailView):
 
 class DiaryEdit(UpdateView):
     model = Diary
-    template_name_suffix = '_update'
+    template_name_suffix = '_edit'
     fields = ['text', 'image']
     success_url = '/'
 
-    def dispatch(self, reqeust, *args, **kwargs):
+    def dispatch(self, request, *args, **kwargs):
         object = self.get_object()
         if object.author != request.user:
             messages.warning(request, '수정할권한없음')
