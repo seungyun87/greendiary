@@ -20,18 +20,30 @@
     
   }
 
+  .fa,.fab,.fad,.fal,.far,.fas{
+    font-weight: 900 !important;
+    }
+
+
 .header-gd{
+  
+  padding : 10px;
+  /*background:url( '/static/images/line.png' );
+  background-position: center;
+  
+  background-size:100%;
+*/
   
   z-index: 2;
   position: absolute;
   line-height: 50px;
-  left: 60;
+  left: 80;
 }
 .header-color{
   
   grid-column: 1/4;
   grid-row: 1/2;
-  background-color: #93db76;
+  /*background-color: #93db76;*/
 
 }
 .header {
@@ -40,8 +52,8 @@
     margin-bottom: 0;
     grid-column: 1/4;
     grid-row: 1/2;
-    box-shadow: 0px 0px 20px rgb(199, 198, 198);
-    border: 10px solid #93db76;
+    /*box-shadow: 0px 0px 20px rgb(199, 198, 198);
+    border: 10px solid #93db76;*/
     
     
 }
