@@ -30,6 +30,7 @@
               <img src="{% static 'images/leaf.png' %}">
               <span>
               초록일기&nbsp;</span></a></h1>
+            
           </div>
         </div>
         <div class="header-color"></div>    
@@ -38,9 +39,9 @@
           <div class="vercenter">
             <div class="right">
               
-          <a href="{% url 'signup' %}"><i class="fas fa-user-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="{% url 'signup' %}"><i class="fas fa-user-plus"></i>&nbsp;회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i>&nbsp;로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>&nbsp;로그아웃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </div>
         </div>
         </div>
@@ -54,14 +55,14 @@
             <li><a href=""><img src="{% static 'images/newspaper.png' %}">&nbsp;&nbsp;환경뉴스</a></li>
             <li><a href="{% url 'diary:calendar'%}"><img src="{% static 'images/diary.png' %}">&nbsp;&nbsp;다이어리</a>
               <ul>
-                <li><a href="{% url 'diary:calendar'%}">나의 다이어리</a></li>
-                <li><a href="{% url 'diary:list' %}">다이어리 리스트</a></li>
+                <li><a href="{% url 'diary:calendar'%}">- 나의 다이어리</a></li>
+                <li><a href="{% url 'diary:list' %}">- 다이어리 리스트</a></li>
                 
               </ul>
             </li>
             <li><a href=""><img src="{% static 'images/farming.png' %}">&nbsp;&nbsp;정원</a>
               <ul>
-                <li><a href="">나의 정원</a></li>                
+                <li><a href="">- 나의 정원</a></li>                
               </ul>
             </li>
               

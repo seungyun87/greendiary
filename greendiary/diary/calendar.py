@@ -15,7 +15,7 @@ class Calendar(HTMLCalendar):
 		d = ''
 		#여기서 이미지 출력.
 		for event in events_per_day:
-			d += f'<li><a href="../list">+1stemp</a></li>'
+			d += f'<li><a href="../list"><img src="../../static/images/checked.png">&nbsp;+1 stemp</a></li>'
 			
 
 		if day != 0:
