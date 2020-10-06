@@ -77,3 +77,7 @@ setting.py 안에 TIME_ZONE 수정 (우리나라 시간으로 고쳤습니다.)
 base.css 내용 추가 및 수정
 html style 추가 및 수정
 >>>>>>> c3f71a7855dd3e1725dacc604c24c0623ca5976a
+
+9/27 ksy
+css 아이콘 추가
+css 수정
