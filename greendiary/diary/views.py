@@ -22,6 +22,9 @@ import calendar
 def home(request):
     return render(request, 'home.html')
 
+def news(request):
+    return render(request, 'diary_news.html')
+
 class CalendarView(ListView):
     model = Diary
     template_name_suffix = '_calendar'

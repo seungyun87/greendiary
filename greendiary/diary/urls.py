@@ -14,6 +14,7 @@ urlpatterns = [
     path("detail/<int:pk>", DiaryDetail.as_view(), name="detail"),
     path("delete/<int:pk>", DiaryDelete.as_view(), name="delete"),
     path("edit/<int:pk>", DiaryEdit.as_view(), name="edit"),
+    path("news/", views.news, name="news"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
