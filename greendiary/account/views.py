@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib import auth
 from .models import Profile
 
+
 # Create your views here.
 def signup(request):
     if request.user.is_authenticated:

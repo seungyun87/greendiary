@@ -7,7 +7,7 @@ from . import views
 app_name = 'diary'
 
 urlpatterns = [
-    path('home/', views.home, name="home"),
+    path("", views.home, name="home"),
     path("create/", DiaryCreate.as_view(), name="create"),
     path("calendar/", CalendarView.as_view(), name="calendar"),
     path("list/", DiaryList.as_view(), name="list"),
