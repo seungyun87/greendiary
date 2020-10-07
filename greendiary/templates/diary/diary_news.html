@@ -1,77 +1,15 @@
 {% extends 'base.html' %}
 
-{% block content %}
+<body>
+    <div class="grid">
+      {% block content %}
+        <div class="content">
 
-<!--슬라이드 쇼 시작-->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="http://image.dongascience.com/Photo/2020/09/bd45bc6487ab6546f2754cdddd9dc655.jpg" alt="First slide">
+          <h1> 이곳에 넣으시면 돼요!</h1>
+          <!-- 위쪽에 div - grid, content 있는데 저 2개 div 안으로 내용이 들어가야 해요 
+                즉, 이곳에 내용 넣으시면 됩니다! -->
+
+        </div>
+      {% endblock %}
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.chosun.com/resizer/6-qiodTAEPFv_h79bqLL8MAelmE=/450x603/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/CZBNSL22J5F4XC724SR4AA3YAE.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="http://www.newspenguin.com/news/photo/202010/3173_9278_1920.jpg" alt="Third slide">
-    </div>
-  </div>
-  <!--왼쪽 화살표-->
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <!--오른쪽 화살표-->
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!--슬라이드 쇼 끝-->
-
-
-<!--뉴스리스트-->
-<ul class="media-list">
-    <li class="media">
-      <h4 class="media-heading">[프리미엄 리포트] 지구 반대편 남극, 매일 인공위성으로 봅니다.</h4>
-      <div class="media-left">
-        <a href="http://www.dongascience.com/news.php?idx=39667">
-          <img class="media-object" src="http://image.dongascience.com/Photo/2020/09/bd45bc6487ab6546f2754cdddd9dc655.jpg" alt="...">
-          <p>극지는 과학이 아직 명확히 밝히지 못한, 지구상에 몇 안 되는 미지의 영역이다. 변덕스러운 태양 활동에 가장 민감하게 반응하는 곳이자, 독특한 기후와 생태계가 날 것 그대로 보존된 신비로운 곳이기도 하다. 이런 극지를 우주적 스케일로 연구하는 사람들이 있다. 이들은 극지의 사계절과 거대한 얼음을, 눈 속에 숨겨진 크레바스와 바다를 초록색으로 물들인 플랑크톤을 인공위성으로 바라본다. 수백km 상공에서 들여다본 극지의 특별한 모습을 소개한다.</p>
-        </a>
-      </div>
-      <div class="media-body">
-      </div>
-    </li>
-</ul>
-
-<br/>
-<ul class="media-list">
-    <li class="media">
-      <h4 class="media-heading">[김민철의 뉴스 저격] “코로나 확산, 지구온난화도 한몫… 거의 매년 국지적 유행병 터질 것”</h4>
-      <div class="media-left">
-        <a href="https://www.chosun.com/opinion/2020/09/11/SRZKREL6PFG5FP5MVR56RJUOIE/">
-          <img class="media-object" src="https://images.chosun.com/resizer/6-qiodTAEPFv_h79bqLL8MAelmE=/450x603/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/CZBNSL22J5F4XC724SR4AA3YAE.jpg" alt="...">
-          <p>신종 코로나 등 잇단 감염병 창궐, 올여름 큰 수해와 열흘 새 태풍 세 개…. 이런 현상이 관련이 있을까. 생태학자인 최재천 이화여대 석좌교수는 신종 코로나 사태는 “굉장히 생태학적인 사건”이라며 기후변화와 밀접한 연관을 갖고 있다고 했다. 최 교수는 올여름 큰 수해도 기후변화와 연관해 생각해야 하고 더 나아가 앞으로 극한 기후를 많이 겪을 것이라고 경고했다. 최근 최 교수를 만나 그 이유가 무엇인지, 그럼 어떻게 해야 하는지 들어보았다.</p>
-        </a>
-      </div>
-      <div class="media-body">
-      </div>
-    </li>
-</ul>
-
-<br/>
-<ul class="media-list">
-    <li class="media">
-      <h4 class="media-heading">'내가 자는 동안...' 온난화 밤에 더 빨랐다</h4>
-      <div class="media-left">
-        <a href="http://www.newspenguin.com/news/articleView.html?idxno=3173">
-          <img class="media-object" src="http://www.newspenguin.com/news/photo/202010/3173_9278_1920.jpg" alt="...">
-          <p>최근 과학자들은 지구 평균기온이 전체적으로 상승하는 현상이 낮보다는 밤에 더 빨리 진행되는 현상을 발견했다. 이전에도 평균기온 상승 시 낮과 밤 간 차이가 발생할 것이라는 예측이나 국지적 평가는 있었으나 전 세계적 추세를 연구한 것은 이번이 처음이다.</p>
-        </a>
-      </div>
-      <div class="media-body">
-      </div>
-    </li>
-</ul>
-
-{% endblock %}
+</body>
