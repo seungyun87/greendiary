@@ -109,3 +109,6 @@ class DiaryEdit(UpdateView):
             return HttpResponseRedirect('/')
         else:
             return super(DiaryEdit, self).dispatch(request, *args, **kwargs)
+
+def news(request):
+    return render(request, 'diary/diary_news.html')

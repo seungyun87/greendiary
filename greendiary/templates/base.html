@@ -62,7 +62,7 @@
              
             <ul>
             <br></br>
-            <li><a href="[% url 'diary:news' %}"><img src="{% static 'images/newspaper.png' %}">&nbsp;&nbsp;환경뉴스</a></li>
+            <li><a href="{% url 'diary:news' %}"><img src="{% static 'images/newspaper.png' %}">&nbsp;&nbsp;환경뉴스</a></li>
             <li><a href="{% url 'diary:calendar'%}"><img src="{% static 'images/diary.png' %}">&nbsp;&nbsp;다이어리</a>
               <ul>
                 <li><a href="{% url 'diary:calendar'%}">- 나의 다이어리</a></li>

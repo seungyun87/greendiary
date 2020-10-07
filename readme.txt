@@ -90,3 +90,7 @@ css 수정
 10/7 ksh
 diary_news.html 구현 ( 아직 수정할 거 남아있음.)
 views.py, url.py를 통해 경로설정 필요함.
+
+10/7 leedy
+diary app - views.py, url.py news 연결.
+base.html 환경뉴스 연결.
